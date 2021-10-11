@@ -8,6 +8,24 @@ a <- 3
 b <- 5
 print(paste("A plus B is:", a + b))
 
+# Logical Operators
+string_var =  "Hello"
+number_var = 7 
+bool_var = TRUE
+
+number_var > 10
+string_var == "World" # Notice two equal signs
+string_var != "Hello"
+
+# Combine operators
+(string_var == "Hello" | number_var == 5) # OR (LEFT OR RIGHT IS TRUE)
+
+(string_var == "Hello" & number_var == 5) # AND
+(string_var == "Hello" & number_var == 7)
+(string_var == "Hello" & bool_var)
+
+
+
 # Functions
 
 # Sample conditional #1
@@ -59,10 +77,20 @@ get_stats <- function(list) {
 
 print(get_stats(list_data))
 
-## Assignment 1: Tips
+## Assignment 1: Introduction
 
 # 1. Reading data from a csv file
-data <- read.csv("info201_sectiondemo/data/countlove.csv")
+data <- read.csv("data/countlove.csv")
 
 # 2. View data in console, type assignment code in the file
 # View(data)
+
+# 3. libraries
+library(stringr)
+# install.packages(stringr) if have not installed a new package
+str_detect("hello", "ello")
+str_count("memes", "e")
+
+# 4. dataframes - accessing columns and reading data
+# data$Date
+# data$Location
