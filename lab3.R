@@ -16,7 +16,8 @@ print(unique_location)
 
 
 # string detection and how to use it
-str_detect(unique_location, "NY")
+library(stringr)
+sum(str_detect(unique_location, "NY"))
 
 # dataframe review/lecture
 class(data['Location']) # VECTOR
@@ -34,7 +35,7 @@ class(data[['Location']]) # CHARACTER
 # Contains NA values - which generally there are many different ways to ignore/not include these data
 # into our results
 attendees <-data$Attendees
-a <- length(data[attendees == 1500, ])
+a <- data[attendees == 1500, ]
 a
 
 # a note on dates

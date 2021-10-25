@@ -51,7 +51,7 @@ get_class_status <- function(grades) {
 get_class_status(grades)
 
 
-# Sample conditional #2
+# Sample conditional
 get_even_or_odd <- function(number) {
   if (number %% 2 == 0 & number <= 10) {
     print("Number is even and less than 10.")
