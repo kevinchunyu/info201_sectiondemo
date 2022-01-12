@@ -19,7 +19,7 @@ sum(str_detect(list_example, "[aeiou]"))
 # LECTURE REVIEW/EXAMPLE OF GGPLOTS
 
 # load the ggplot library
-
+# install.packages("ggplot2")
 library(ggplot2)
 
 # get R built-in dataset of titanic
@@ -38,13 +38,12 @@ bar_mtcars  <- ggplot(mtcars, aes(x = gear)) + geom_bar()
 
 # 3. Histogram
 # Histogram of the distribution of hp
-hist_mtcars <- ggplot(mtcars, aes(hp)) + geom_histogram(binwidth = 25)
+hist_mtcars <- ggplot(mtcars, aes(hp)) + geom_histogram(binwidth = 10)
 
 # 4. Adding labels, colors, titles for ggplot 
-
 # HP vs AM
 # horsepower versus transmission type (0 = automatic, 1 = manual)
-labeled_mtcars <- ggplot(mtcars, aes(hp, am)) + geom_point(color="red", size =3) + 
+labeled_mtcars <- ggplot(mtcars, aes(hp, am)) + geom_point(color="blue", size =10) + 
     labs(title="mtcars - HP vs AM") +
     xlab("HP - gross horsepower") +
     ylab("Automatic (0) / Manual Transmission (1)")

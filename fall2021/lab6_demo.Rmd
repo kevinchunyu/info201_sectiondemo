@@ -1,0 +1,21 @@
+---
+title: "lab6_demo"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## This is sample code of attaching ggplot into rmarkdown files!
+
+
+```{r ggplot-demo}
+# load libraries
+library(ggplot2)
+
+scatter_mtcars <- ggplot(mtcars, aes(x = mpg, y = hp) ) + geom_point()
+
+scatter_mtcars
+
+```
