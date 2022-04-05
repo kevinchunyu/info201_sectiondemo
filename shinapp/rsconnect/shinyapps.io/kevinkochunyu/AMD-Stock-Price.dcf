@@ -1,0 +1,13 @@
+name: AMD-Stock-Price
+title: AMD-Stock-Price
+username:
+account: kevinkochunyu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5767603
+bundleId: 5635257
+url: https://kevinkochunyu.shinyapps.io/AMD-Stock-Price/
+when: 1646265943.06551
+lastSyncTime: 1646265943.06551
+asMultiple: FALSE
+asStatic: FALSE
